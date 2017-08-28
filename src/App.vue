@@ -12,7 +12,9 @@
           <router-link to="/seller" active-class="active">商家</router-link>
         </div>
       </div>
-     <router-view :seller="seller"></router-view>
+      <keep-alive> //保留组件的状态
+        <router-view :seller="seller"></router-view>
+      </keep-alive>
   </div>
 </template>
 

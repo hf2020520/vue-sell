@@ -141,7 +141,7 @@
           return
         }
         this.selectedFood = food
-        this.$refs.food.show()
+        this.$refs.food.show() //调用food组件的show方法
       },
       addFood(target) {
         this._drop(target)
